@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    font-family: "Nanum Gothic Coding", monospace;
+    height: 100%;
+}
+
+#title {
+    font-size: 3em;
+}
+
+#clock {
+    font-size: 7em;
+    vertical-align: middle;
+}
