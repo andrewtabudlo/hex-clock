@@ -1,3 +1,4 @@
+let body = document.body;
 let clock = document.querySelector("#clock");
 
 function leadingZero(time) {
@@ -13,6 +14,7 @@ function updateClock() {
     let min = date.getMinutes();
     let sec = date.getSeconds();
     clock.innerText = "#" + leadingZero(hr) + leadingZero(min) + leadingZero(sec);
+    body.style = "background-color: #" + leadingZero(hr) + leadingZero(min) + leadingZero(sec);
 }
 
 setInterval(updateClock, 1000)
